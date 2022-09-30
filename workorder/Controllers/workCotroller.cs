@@ -31,20 +31,20 @@ public class workorder : ControllerBase
     }
 
 //     // Create New Workorder
-// [HttpPost("Create")]
-//      public  IActionResult Create([FromBody] WorkTb _worwk)
-//     {
-//         try
-//         {
-//             this._DBContext.WorkTbs.Add(_worwk);
-//             this._DBContext.SaveChanges();
-//         }
-//         catch (Exception)
-//         {
-//             return Ok(false) ;
-//         }
-//         return Ok(true) ;
-//     }
+[HttpPost("Create")]
+     public  IActionResult Create([FromBody] WorkTb _worwk)
+    {
+        try
+        {
+            this._DBContext.WorkTbs.Add(_worwk);
+            this._DBContext.SaveChanges();
+        }
+        catch (Exception)
+        {
+            return Ok(false) ;
+        }
+        return Ok(true) ;
+    }
 
     // Delete Record From Workorder
 
